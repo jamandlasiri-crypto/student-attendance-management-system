@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+h2 {
+    color: #1e40af;
+}
+
+.dashboard {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid #aaa;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #dbeafe;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

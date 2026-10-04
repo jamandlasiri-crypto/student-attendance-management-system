@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance Management</h1>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="total">0</p>
+            </div>
+            <div class="card">
+                <h3>Present</h3>
+                <p id="present">0</p>
+            </div>
+            <div class="card">
+                <h3>Absent</h3>
+                <p id="absent">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Student</h2>
+            <input type="text" id="roll" placeholder="Enter Roll Number">
+            <input type="text" id="name" placeholder="Enter Student Name">
+            <button onclick="addStudent()">Add Student</button>
+        </section>
+
+        <section>
+            <h2>Mark Attendance</h2>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student Name</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList"></tbody>
+            </table>
+            <button onclick="saveAttendance()">Save Attendance</button>
+        </section>
+
+        <section>
+            <h2>Attendance Report</h2>
+            <button onclick="showReport()">View Report</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student Name</th>
+                        <th>Present Days</th>
+                        <th>Total Days</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="report"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
